@@ -1,0 +1,89 @@
+.water-cycle {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000;
+}
+
+.water-cycle h1 {
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.water-cycle .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+    flex-direction: row;
+    gap: 10px; /* Espacio reducido entre la imagen y las stages */
+    padding: 5px; /* Espacio reducido en todo el contenedor */
+    margin-bottom: 0; /* Elimina cualquier espacio extra inferior en el contenedor */
+}
+
+.water-cycle #image-container {
+    position: relative;
+    max-width: 800px;
+    margin-left: 20px; /* Espacio entre la imagen y las stages */
+}
+
+.water-cycle .highlight {
+    border: 3px solid orange;
+}
+
+.water-cycle .stages {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+}
+
+.water-cycle .stage {
+    margin: 5px 0; /* Menos espacio entre las stages */
+    padding: 10px; /* Menos espacio interno */
+    width: 180px;
+    max-width: 180px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    background-color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.water-cycle .stage:focus {
+    border: 2px solid #ff4500;
+    background-color: #f0f0f0;
+}
+
+.water-cycle .correct {
+    background-color: lightgreen;
+    transform: scale(1.05);
+}
+
+.water-cycle .image-part {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+.water-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0; /* Ajuste de padding para menos espacio vertical */
+    margin-bottom: 0; /* Elimina cualquier margen inferior adicional */
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+}
+
+.water-game {
+    width: 70%;
+    background-color: #c387eb;
+    overflow: hidden;
+    position: relative;
+    margin-left: 20px;
+}

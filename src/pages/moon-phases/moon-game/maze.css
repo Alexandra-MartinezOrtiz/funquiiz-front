@@ -1,0 +1,44 @@
+/* Fondo del laberinto */
+.maze {
+  display: grid;
+  grid-template-columns: repeat(40, 1fr); /* Ajusta el número de columnas según el tamaño del laberinto */
+  gap: 8px;
+
+  padding: 20px; /* Espacio alrededor del laberinto */
+  max-width: 800px; /* Ancho máximo del laberinto */
+  margin: 0 auto; /* Centrar el laberinto en la página */
+  width: 100%;
+  margin-left: -30px;
+  margin-top: 16px;
+}
+
+/* Estilos de las celdas */
+.cell {
+  width: 40px; /* Aumenta el tamaño de las celdas */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(140, 168, 183, 0.1); /* Borde sutil */
+}
+
+/* Estilos de las paredes */
+.wall {
+  background: #000; /* Color de las paredes */
+  opacity: 0; /* Transparencia para que se vea el fondo */
+}
+
+/* Estilos de los caminos */
+.path {
+  background: rgba(0, 0, 0, 0); /* Color del camino con transparencia */
+}
+
+/* Estilos del jugador */
+.player {
+  background-image: url('../../../assets/player1.png'); /* Ruta de la imagen del jugador */
+  background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+  background-position: center; /* Centra la imagen */
+  border-radius: 50%; /* Bordes redondeados (opcional) */
+  width: 100%; /* Ocupa todo el espacio de la celda */
+  height: 100%;
+}
